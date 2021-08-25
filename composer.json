@@ -1,0 +1,36 @@
+{
+    "name": "informaticalivreoficial/phpmvc",
+    "description": "Site Padrão MVC com PHP",
+    "minimum-stability": "stable",
+    "authors":[
+        {
+            "name": "Renato Montanari",
+            "email": "suporte@informaticalivre.com",
+            "homepage": "https://informaticalivre.com",
+            "role": "Developer"
+        }
+    ],
+    "config": {
+        "vendor-dir": "vendor"
+    },
+    "autoload": {
+        "psr-4": {
+            "Source\\": "source/"
+        },
+        "files": [
+            "source/Boot/Config.php",
+            "source/Boot/Helpers.php"
+        ]
+    },
+    "require": {
+        "php": "^7.4",
+        "ext-pdo": "^7.4",
+        "phpmailer/phpmailer": "6.5.1",
+        "league/plates": "v4.0.0-alpha",
+        "coffeecode/uploader": "1.0.*",
+        "coffeecode/cropper": "1.3.*",
+        "coffeecode/optimizer": "2.0.*",
+        "coffeecode/paginator": "1.0.*",
+        "coffeecode/router": "1.0.*"
+    }
+}
